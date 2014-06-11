@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head> 
-	  <h2> Movie App </h2>
 	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	  <script type="text/javascript" src="script.js"></script>
 	  <link rel="stylesheet" type = "text/css" href="style.css">
-
+	  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <h2> Movie App </h2>
 </head>
 <body>
-	<form id="movieSearch">
-		<input type="text" id="searchTerm">
-		<input type="submit" id="search">
-	</form>
-	<div class="search_results"></div>
-	<div class="poster"></div>
+	
+	<form id="movieSearch" action="/search.html" class="search-wrapper cf">
+        <input id="searchTerm" type="text" placeholder="Search here..." required="">
+        <button  id="search" type="submit">Search</button>
+    </form>
+	<table class="search_results" ></table>
+	<div class="poster " ></div>
 		
 </body>
 </html>
